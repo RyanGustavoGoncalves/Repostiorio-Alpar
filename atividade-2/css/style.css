@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.dsp-grid{
+    display: grid;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.plc-center{
+    place-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
