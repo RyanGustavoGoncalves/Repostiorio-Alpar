@@ -5,35 +5,55 @@
     font-family: sans-serif;
 }
 
+.fontW-normal {
+    font-weight: normal;
+}
+
 .dsp-flex {
     display: flex;
 }
 
-.dsp-grid{
+.dsp-grid {
     display: grid;
 }
 
-.gap-10{
+.grid-template-colum-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.gap-10 {
     gap: 10px;
 }
 
-.gap-15{
+.gap-15 {
     gap: 15px;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.list-style-none{
+.list-style-none {
     list-style: none;
 }
 
-.text-decoration-none{
+.text-decoration-none {
     text-decoration: none;
 }
 
-.plc-center{
+.plc-center {
     place-items: center;
 }
 
