@@ -74,3 +74,11 @@ h2 {
     height: 250px;
     border-radius: 50%;
 }
+
+.cortes-container{
+    display: grid;
+}
+
+.audio{
+    display: grid;
+}
