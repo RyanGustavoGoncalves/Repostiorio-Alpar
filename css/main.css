@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fontW-normal {
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.dsp-grid {
+    display: grid;
+}
+
+.dsp-contents {
+    display: contents;
+}
+
+.grid-template-colum-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.wave-color {
+    background: #0099ff;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-between {
+    align-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-black {
+    color: black;
+}
+.text-white {
+    color: white;
+}
+
+.plc-center {
+    place-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.icon:hover {
+    color: #0099ffd2;
+    border: 1px solid #0099ffd2;
+    background: #e0e0e0;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
