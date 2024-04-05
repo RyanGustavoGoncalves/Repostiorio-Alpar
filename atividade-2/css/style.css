@@ -30,33 +30,95 @@ nav ul li {
     margin-right: 10px;
 }
 
-section {
-    margin-top: 20px;
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.menu-category {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background-color: white;
+}
+
+.menu-category h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.menu-category ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu-category li {
+    margin-bottom: 15px;
+}
+
+.menu-category h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.menu-category p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+section,
+article {
+    width: 100%;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hours {
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 15px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th,
 td {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ddd;
 }
 
 th {
     background-color: #0099ff;
-    color: white;
+    color: #fff;
     text-align: left;
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 
 footer {
     background-color: #0099ff;
