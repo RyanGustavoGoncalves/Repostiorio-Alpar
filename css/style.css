@@ -53,13 +53,7 @@ footer svg {
     height: auto;
 }
 
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.button-container .button {
+button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -69,7 +63,7 @@ footer svg {
     transition: background-color 0.3s ease;
 }
 
-.button-container .button:hover {
+button:hover {
     background-color: #f0f0f0;
 }
 

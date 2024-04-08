@@ -126,3 +126,14 @@ footer {
     padding: 10px 20px;
     text-align: center;
 }
+
+@media (max-width: 450px) {
+    main {
+        padding: 0;
+    }
+
+    section,
+    article {
+        padding: 0;
+    }
+}

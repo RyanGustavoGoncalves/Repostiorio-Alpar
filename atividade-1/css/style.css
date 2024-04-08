@@ -85,3 +85,12 @@ button:hover {
 .text-decoration-none {
     text-decoration: none;
 }
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.skills img{
+    width: 90%;
+}

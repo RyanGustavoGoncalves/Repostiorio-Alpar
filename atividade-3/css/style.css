@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -12,7 +13,8 @@ body{
     font-family: sans-serif;
     background-color: #f6f6f6;
 }
-fieldset{
+
+fieldset {
     background-color: #262662;
     background-image: url(https://blog.leucotron.com.br/wp-content/uploads/2021/10/a-importancia-da-tecnologia-da-informacao-nas-empresas.jpeg);
     border: none;
@@ -21,7 +23,8 @@ fieldset{
     text-align: center;
     border-radius: 5px;
 }
-div.titForm{
+
+div.titForm {
     color: white;
     border-radius: 0px 15px 15px 1px;
     padding: 45px;
@@ -31,49 +34,58 @@ div.titForm{
     justify-content: space-around;
     background-color: #0684cd;
 }
-form{
+
+form {
     margin: 40px;
     background-color: #80808078;
     padding: 15px;
     border-radius: 20px;
 }
-form>h2{
+
+form>h2 {
     color: white;
 }
-input{
+
+input {
     padding: 8px;
     border: none;
     outline: none;
     border-radius: 20px 20px 20px 20px;
     background-color: #8080808f;
 }
-label{
+
+label {
     color: white;
     font-size: 13px;
     padding-inline: 10px;
 }
-::placeholder{
+
+::placeholder {
     color: rgb(198, 198, 198);
     font-family: sans-serif;
 }
-legend{
+
+legend {
     font-size: 35px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Onest', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-div.inp{
+
+div.inp {
     margin: 20px;
     display: grid;
     text-align: initial;
 }
-div.btn{
+
+div.btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-div.btn>button{
+
+div.btn>button {
     padding: 10px;
     border: none;
     border-radius: 20px 20px 20px 20px;
@@ -85,7 +97,8 @@ div.btn>button{
     color: white;
     transition: all 0.5s ease-in;
 }
-div.btn>a>button{
+
+div.btn>a>button {
     padding: 10px;
     border: none;
     border-radius: 20px 20px 20px 20px;
@@ -97,21 +110,27 @@ div.btn>a>button{
     color: white;
     transition: all 0.5s ease-in;
 }
-div.btn>a>button:hover{
+
+div.btn>a>button:hover {
     box-shadow: 0px 0px 3px white;
 }
-div.btn>button:hover{
+
+div.btn>button:hover {
     box-shadow: 0px 0px 3px white;
 }
-div#error-container{
+
+div#error-container {
     display: none;
     padding: 20px;
 }
-div#sucess-container{
+
+div#sucess-container {
     display: none;
     padding: 20px;
 }
-article.sucessBox,article.BoxError{
+
+article.sucessBox,
+article.BoxError {
     position: absolute;
     display: none;
     background-color: rgb(200, 200, 200);
@@ -119,41 +138,69 @@ article.sucessBox,article.BoxError{
     border-radius: 5px;
     padding: 15px;
 }
-div.errorText{
+
+div.errorText {
     font-size: 21px;
     text-shadow: 1px 1px 0px white;
 }
-div.btnErrorCont{
+
+div.btnErrorCont {
     display: flex;
     justify-content: end;
 }
-div.btnErrorCont>button{
+
+div.btnErrorCont>button {
     padding: 5px;
     border: none;
     border-radius: 2px;
     padding-inline: 20px;
     transition: all 0.5s ease-in-out;
 }
-div.btnErrorCont>button:hover{
+
+div.btnErrorCont>button:hover {
     cursor: pointer;
     transform: scale(1.1);
     background-color: #85dc80;
 }
-div.tit_error{
+
+div.tit_error {
     display: flex;
     align-items: center;
 }
-div.tit_error>span{
+
+div.tit_error>span {
     text-shadow: 1px 1px 1px white;
     font-weight: bold;
     font-size: 20px;
 }
-div.login{
+
+div.login {
     padding-bottom: 70px;
 }
-div.login>span{
-   font-size: 15px; 
+
+div.login>span {
+    font-size: 15px;
 }
-hr{
+
+hr {
     width: 100%;
+}
+
+.change-screen {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.change-screen>a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    div.titForm {
+        display: none;
+    }
+    .change-screen {
+        display: block;
+    }
 }
