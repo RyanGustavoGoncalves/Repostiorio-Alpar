@@ -1,4 +1,3 @@
-```markdown
 # Descrição da Atividade
 
 Você deve construir uma aplicação web simples de um sistema bancário que permite ao usuário realizar operações de depósito e saque em uma conta bancária. A aplicação terá uma interface básica onde o usuário pode inserir o valor a ser depositado ou sacado e visualizar o saldo atualizado.
@@ -30,4 +29,3 @@ Você deve construir uma aplicação web simples de um sistema bancário que per
 
 1. Abra o `index.html` no navegador e teste as funcionalidades de depósito e saque.
 2. Verifique se o saldo é atualizado corretamente e se as mensagens de erro são mostradas quando necessário.
-```
