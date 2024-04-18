@@ -6,8 +6,14 @@ const btnBanheiro = document.getElementById("btn-banheiro");
 const verifyBtn = (btn, isActive) => {
     if (isActive) {
         btn.classList.add('active');
+        const textContent = btn.innerText;
+        const newTextContent = textContent.replace("Desligado", "Ligado");
+        btn.innerHTML = newTextContent;
     } else {
         btn.classList.remove('active');
+        const textContent = btn.innerText;
+        const newTextContent = textContent.replace("Ligado", "Desligado");
+        btn.innerHTML = newTextContent;
     }
 }
 
