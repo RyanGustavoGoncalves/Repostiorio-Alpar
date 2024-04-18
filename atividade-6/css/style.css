@@ -33,3 +33,7 @@ article {
 .btn-room:focus{
     border: none;
 }
+
+.active{
+    background-color: green;
+}

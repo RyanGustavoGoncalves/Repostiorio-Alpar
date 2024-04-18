@@ -1,30 +1,52 @@
-const btnSala = document.getElementById("btn-sala");
-btnSala.style.background = "red"
-const btnCozinha = document.getElementById("btn-cozinha");
-btnCozinha.style.background = "red"
-const btnQuarto = document.getElementById("btn-quarto");
-btnQuarto.style.background = "red"
-const btnBanheiro = document.getElementById("btn-banheiro");
-btnBanheiro.style.background = "red"
+class luz {
+    static luzInstance;
+    sala = false;
+    cozinha = false;
+    quarto = false;
+    banheiro = false;
+    observer = [];
 
+    toggle(comodo) {
+        if (comodo == "sala") {
+            this.sala = !this.sala;
+        }
+        if (comodo == "cozinha") {
+            this.cozinha = !this.cozinha;
+        }
+        if (comodo == "quarto") {
+            this.quarto = !this.quarto;
+        }
+        if (comodo == "banheiro") {
+            this.banheiro = !this.banheiro;
+        }
 
-class Luz {
-    constructor(btn) {
-        if (btn.style.background === "red") {
-            btn.style.background = "green";
-            const textContent = btn.innerText;
-            const newTextContent = textContent.replace("Desligado", "Ligado");
-            btn.innerHTML = newTextContent;
-        } else {
-            btn.style.background = "red";
-            const textContent = btn.innerText;
-            const newTextContent = textContent.replace("Ligado", "Desligado");
-            btn.innerHTML = newTextContent;
+        this.executar();
+    }
+
+    getState(comodo) {
+        if (comodo == "sala") {
+            return this.sala;
+        }
+        if (comodo == "cozinha") {
+            return this.cozinha;
+        }
+        if (comodo == "quarto") {
+            return this.quarto;
+        }
+        if (comodo == "banheiro") {
+            return this.banheiro;
         }
     }
 
+    inscrever(func) {
+        this.observer.push(func);
+    }
+
+    executar() {
+        this.observer.forEach((func) => {
+            func();
+        })
+    }
 }
 
-function getValue(btn) {
-    new Luz(btn);
-}
+luz.luzInstance = new luz();
