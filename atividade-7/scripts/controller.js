@@ -23,10 +23,10 @@ class WeatherController {
         const weatherInfoElement = document.getElementById('weather-info');
         if (this.weather) {
             weatherInfoElement.innerHTML = `
-                <h2>${this.weather.city}</h2>
-                <p>Temperature: ${this.weather.temperature} °C</p>
-                <p>Description: ${this.weather.description}</p>
-                <p>Humidity: ${this.weather.humidity}%</p>
+            <h2>${this.weather.city}</h2>
+            <p>Temperature: <strong id="temp">${this.weather.temperature}</strong> °C</p>
+            <p>Description: <strong>${this.weather.description}</strong></p>
+                <p>Humidity: <strong>${this.weather.humidity}</strong>%</p>
             `;
         } else {
             weatherInfoElement.innerHTML = '<p>No weather data available</p>';

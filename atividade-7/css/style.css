@@ -11,6 +11,7 @@ body {
     background-color: gainsboro;
     border-radius: 12px;
     box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.2);
+    max-width: 500px !important;
     height: 50vh;
 }
 
@@ -30,4 +31,15 @@ h2{
 
 .desc{
     font-size: larger;
+}
+
+.hot{
+    color: red;
+}
+
+.clean{
+    color: rgb(75, 75, 253);
+}
+.cold{
+    color: rgb(98, 49, 212);
 }
